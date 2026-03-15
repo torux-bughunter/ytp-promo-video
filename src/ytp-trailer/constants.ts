@@ -26,29 +26,26 @@ export const C = {
   shadowLuxuryGreen: "0 8px 32px rgba(0, 166, 81, 0.12)",
 } as const;
 
+// Prada Dem — 122 BPM. At 30fps: 1 beat = 15 frames, 1 bar = 60. All scene durations beat-aligned.
 export const SCRIPT = [
-  { type: "text", text: "What if", frames: 28 },
-  { type: "text", text: "the next generation\ndidn't wait?", frames: 44 },
-  { type: "brand", frames: 72 },
-
-  { type: "text", text: "Have a product?\nHave a business idea?", frames: 62, bg: "product_idea" as const },
-  { type: "text", text: "This is where you\nlaunch it.", frames: 52, bg: "store_setup" as const },
-  { type: "mockup_dashboard", frames: 70 },
-  { type: "text", text: "Set up your store in minutes.\nAdd products, set prices, go live.", frames: 42, bg: "product_list" as const },
-  { type: "text", text: "We handle payments, shipping labels,\nand tracking — so you can focus on\nwhat you're building.", frames: 50, bg: "shipping" as const },
-  { type: "text", text: "Keep more of what you earn.\nOur fees are built to help you grow,\nnot hold you back.", frames: 46, bg: "revenue" as const },
-
-  { type: "text", text: "Give your customers a premium\nshopping experience.", frames: 36 },
-
-  { type: "mockup_storefront", frames: 78 },
-  { type: "text", text: "Showcase your products alongside\nthe best student brands.", frames: 38, bg: "browse" as const },
-  { type: "mockup_products", frames: 66 },
-  { type: "mockup_phone", frames: 66 },
-
-  { type: "text", text: "A 100% nonprofit initiative\ndedicated to empowering\nyouth-led businesses.", frames: 44 },
-  { type: "text", text: "Start building your empire today.", frames: 40 },
-  { type: "text", text: "Launching March 21.", frames: 48 },
-  { type: "end", frames: 90 },
+  { type: "text", text: "What if", frames: 45 }, // 3 beats
+  { type: "text", text: "you didn't have to wait\nto start selling?", frames: 45 }, // 3 beats
+  { type: "brand", frames: 75 }, // 5 beats
+  { type: "text", text: "Have a product?\nHave a business idea?", frames: 75, bg: "product_idea" as const }, // 5 beats
+  { type: "text", text: "This is where you\nlaunch it.", frames: 45, bg: "store_setup" as const }, // 3 beats
+  { type: "mockup_dashboard", frames: 75 }, // 5 beats
+  { type: "text", text: "Set up your store in minutes.\nAdd products, set prices, go live.", frames: 45, bg: "product_list" as const }, // 3 beats
+  { type: "text", text: "We handle payments, shipping labels,\nand tracking — so you can focus on\nwhat you're building.", frames: 75, bg: "shipping" as const }, // 5 beats
+  { type: "text", text: "Keep more of what you earn.\nOur fees are built to help you grow,\nnot hold you back.", frames: 75, bg: "revenue" as const }, // 5 beats
+  { type: "text", text: "Give your customers a premium\nshopping experience.", frames: 45 }, // 3 beats
+  { type: "mockup_storefront", frames: 75 }, // 5 beats
+  { type: "text", text: "Showcase your products alongside\nthe best student brands.", frames: 75, bg: "browse" as const }, // 5 beats
+  { type: "mockup_products", frames: 75 }, // 5 beats
+  { type: "mockup_phone", frames: 60 }, // 4 beats
+  { type: "text", text: "A 100% nonprofit initiative\ndedicated to empowering\nyouth-led businesses.", frames: 60 }, // 4 beats
+  { type: "text", text: "Start building your empire today.", frames: 60 }, // 4 beats
+  { type: "text", text: "Launching March 21.", frames: 45 }, // 3 beats
+  { type: "end", frames: 75 }, // 5 beats
 ] as const;
 
 export const MOCK_PRODUCTS = [
